@@ -6,8 +6,27 @@
     <title>SRE Greenpower</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-
-    </style>
+        .hero-background {
+            background-image: url('./sre.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .hero-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(13, 148, 103, 0.75) 50%, rgba(0, 169, 116, 0.5) 100%);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+     </style>
 </head>
 <body class="font-sans antialiased">
     <header class="bg-white shadow-md fixed w-full top-0 z-50">
@@ -37,5 +56,77 @@
         </nav>
     </header>
     
+    <section id="home" class="hero-background pt-24 pb-16 min-h-screen flex items-center">
+        <div class="container mx-auto px-6 hero-content">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+                        Masa Depan Energi Bersih Dimulai Hari Ini
+                    </h1>
+                    <p class="text-lg md:text-xl text-white mb-8 drop-shadow-md">
+                        Kami menyediakan solusi energi terbarukan yang inovatif dan berkelanjutan. Dari solar panel hingga sistem penyimpanan energi, kami membantu Anda beralih ke energi hijau untuk masa depan yang lebih baik.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-center shadow-xl">
+                            Konsultasi Gratis
+                        </a>
+                        <a href="#features" class="bg-transparent text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-green-600 transition text-center border-2 border-white">
+                            Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Solusi Energi Terbarukan Kami</h2>
+                <p class="text-xl text-gray-600">Teknologi hijau untuk masa depan yang berkelanjutan</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+            
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Energi Solar</h3>
+                    <p class="text-gray-700">
+                        Panel surya berkualitas tinggi dengan efisiensi maksimal. Hemat biaya listrik hingga 80% dan kurangi emisi karbon untuk lingkungan lebih baik.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="bg-emerald-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Penyimpanan Energi</h3>
+                    <p class="text-gray-700">
+                        Sistem baterai modern yang menyimpan energi berlebih untuk digunakan saat dibutuhkan. Jaminan pasokan listrik 24/7 tanpa gangguan.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="bg-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Monitoring Real-Time</h3>
+                    <p class="text-gray-700">
+                        Pantau produksi dan konsumsi energi Anda secara real-time. Dashboard interaktif untuk optimasi penggunaan energi yang lebih efisien.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
