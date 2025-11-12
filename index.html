@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SRE Greenpower</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+    </style>
 </head>
-<body>
+<body class="font-sans antialiased">
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 19h20L12 2zm0 3.5L18.5 17h-13L12 5.5z"/>
+                        <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                    </svg>
+                    <span class="ml-2 text-2xl font-bold text-gray-800">GreenPower <span class="text-green-600">SRE</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-green-600 transition">Home</a>
+                    <a href="#features" class="text-gray-700 hover:text-green-600 transition">Features</a>
+                    <a href="#about" class="text-gray-700 hover:text-green-600 transition">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
     
 </body>
 </html>
